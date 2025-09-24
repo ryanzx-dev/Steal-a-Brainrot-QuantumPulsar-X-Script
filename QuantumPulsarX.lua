@@ -1,41 +1,5 @@
--- Key System Script for Roblox
--- Replace the verification URL with your actual website URL
-
--- Create the key verification UI
-local function createKeyUI()
-    local ScreenGui = Instance.new("ScreenGui")
-    local MainFrame = Instance.new("Frame")
-    local Title = Instance.new("TextLabel")
-    local KeyInput = Instance.new("TextBox")
-    local SubmitButton = Instance.new("TextButton")
-    local GetKeyButton = Instance.new("TextButton")
-    local StatusLabel = Instance.new("TextLabel")
    
-    -- Configure ScreenGui
-    ScreenGui.Name = "KeySystemUI"
-    ScreenGui.Parent = game:GetService("CoreGui")
-    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-   
-    -- Configure MainFrame
-    MainFrame.Name = "MainFrame"
-    MainFrame.Parent = ScreenGui
-    MainFrame.BackgroundColor3 = Color3.fromRGB(15, 23, 42)
-    MainFrame.BorderSizePixel = 0
-    MainFrame.Position = UDim2.new(0.5, -150, 0.5, -100)
-    MainFrame.Size = UDim2.new(0, 300, 0, 200)
-   
-    -- Configure Title
-    Title.Name = "Title"
-    Title.Parent = MainFrame
-    Title.BackgroundColor3 = Color3.fromRGB(30, 41, 59)
-    Title.BorderSizePixel = 0
-    Title.Size = UDim2.new(1, 0, 0, 30)
-    Title.Font = Enum.Font.GothamSemibold
-    Title.Text = "Script Key System"
-    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Title.TextSize = 16.000
-   
-    -- Configure KeyInput
+    --  KeyInput
     KeyInput.Name = "KeyInput"
     KeyInput.Parent = MainFrame
     KeyInput.BackgroundColor3 = Color3.fromRGB(51, 65, 85)
@@ -49,7 +13,7 @@ local function createKeyUI()
     KeyInput.TextSize = 14.000
    
     -- Configure SubmitButton
-    SubmitButton.Name = "SubmitButton"
+    .Name = "SubmitButton"
     SubmitButton.Parent = MainFrame
     SubmitButton.BackgroundColor3 = Color3.fromRGB(34, 197, 94)
     SubmitButton.BorderSizePixel = 0
